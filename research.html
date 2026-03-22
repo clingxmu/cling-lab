@@ -4,11 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research - Chen Ling Lab | Xiamen University</title>
-    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 尝试不同的路径写法，逐一测试 -->
+    <!-- 原路径 -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    
+    <!-- 方案1：绝对路径（从根目录开始） -->
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- 方案2：如果HTML和css在同一目录 -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    
+    <!-- 方案3：使用完整URL（如果已上线） -->
+    <!-- <link rel="stylesheet" href="https://yourdomain.com/css/style.css"> -->
+    
+    <!-- 方案4：如果css文件在上一级目录 -->
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- 添加一个简单的测试样式，看看CSS是否工作 -->
+    <style>
+        .css-test {
+            background-color: red;
+            padding: 10px;
+            color: white;
+            display: none; /* 正常情况应该隐藏 */
+        }
+    </style>
 </head>
 <body>
+    <!-- CSS测试元素 -->
+    <div class="css-test" id="cssTest">
+        CSS加载失败！请检查css/style.css文件路径
+    </div>
+    
+    <script>
+        // 检查CSS是否加载成功的脚本
+        window.onload = function() {
+            var testEl = document.getElementById('cssTest');
+            // 如果CSS文件不存在，会显示这个提示
+            setTimeout(function() {
+                var isRed = window.getComputedStyle(testEl).backgroundColor === 'rgb(255, 0, 0)';
+                if(isRed) {
+                    testEl.style.display = 'block';
+                }
+            }, 100);
+        };
+    </script>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -82,3 +127,6 @@
             </div>
         </div>
     </section>
+
+</body>
+</html>
