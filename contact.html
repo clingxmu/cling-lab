@@ -42,11 +42,11 @@
                 <div class="contact-card">
                     <h3>📍 Location</h3>
                     <p><strong>School of Life Sciences</strong></p>
-                    <p>Xiamen University</p>
+                    <p>Xiamen University, Xiang'an Campus</p>
                     <p>Xiang'an District, Xiamen</p>
-                    <p>Fujian 361102, China</p>
+                    <p>Fujian Province 361102, China</p>
                     <p style="margin-top: 15px;">
-                        <a href="https://maps.google.com/?q=Xiamen+University+School+of+Life+Sciences" target="_blank">
+                        <a href="https://maps.google.com/?q=School+of+Life+Sciences+Xiamen+University+Xiang'an+Campus" target="_blank">
                             📍 Get Directions
                         </a>
                     </p>
@@ -107,10 +107,38 @@
         <div class="container">
             <h2>Find Us</h2>
             <div style="max-width: 800px; margin: 30px auto 0;">
-                <!-- Google Maps Embed -->
+                <!-- Google Maps Integration Instructions -->
+                <div class="map-container" style="background: var(--bg-light); display: flex; align-items: center; justify-content: center;">
+                    <div style="text-align: center; padding: 40px;">
+                        <div style="font-size: 3rem; margin-bottom: 20px;">📍</div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 15px;">Google Maps Integration</h3>
+                        <p style="color: var(--text-light); margin-bottom: 20px;">
+                            To add an interactive map of our location:
+                        </p>
+                        <div style="text-align: left; max-width: 500px; margin: 0 auto;">
+                            <ol style="color: var(--text-light); line-height: 1.8;">
+                                <li>Visit <a href="https://www.google.com/maps" target="_blank">Google Maps</a></li>
+                                <li>Search for: <strong>"School of Life Sciences, Xiamen University Xiang'an Campus"</strong></li>
+                                <li>Click "Share" → "Embed a map"</li>
+                                <li>Copy the HTML code</li>
+                                <li>Replace this section with the copied code</li>
+                            </ol>
+                        </div>
+                        <p style="margin-top: 25px;">
+                            <a href="https://www.google.com/maps/search/?api=1&query=School+of+Life+Sciences+Xiamen+University+Xiang'an+Campus+361102" 
+                               target="_blank" 
+                               style="display: inline-block; padding: 12px 24px; background: var(--secondary-color); color: white; text-decoration: none; border-radius: 5px; font-weight: 500;">
+                                📍 Open in Google Maps
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Alternative: Simple iframe with search query -->
+                <!-- 
                 <div class="map-container">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.238636302592!2d118.090377315443!3d24.435770984352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3414a3e3c3e2e2e3%3A0x7b8b8b8b8b8b8b8b!2sXiamen%20University%20School%20of%20Life%20Sciences!5e0!3m2!1sen!2scn!4v1640000000000!5m2!1sen!2scn" 
+                        src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=School+of+Life+Sciences+Xiamen+University+Xiang'an+Campus+361102" 
                         width="100%" 
                         height="400" 
                         style="border:0; border-radius: 10px;" 
@@ -119,37 +147,16 @@
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-                
-                <!-- Alternative: Interactive Map with JavaScript API -->
-                <!-- 
-                <div id="map" style="width:100%; height:400px; border-radius:10px;"></div>
-                <script>
-                    function initMap() {
-                        const location = { lat: 24.4358, lng: 118.0925 }; // Xiamen University coordinates
-                        const map = new google.maps.Map(document.getElementById("map"), {
-                            zoom: 15,
-                            center: location,
-                            mapTypeControl: true,
-                            streetViewControl: true
-                        });
-                        const marker = new google.maps.Marker({
-                            position: location,
-                            map: map,
-                            title: "Chen Ling Lab, Xiamen University"
-                        });
-                    }
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
                 -->
                 
                 <div style="margin-top: 20px; text-align: center;">
                     <p style="color: var(--text-light);">
-                        <strong>📍 Xiamen University, School of Life Sciences</strong><br>
-                        Xiang'an District, Xiamen, Fujian 361102, China
+                        <strong>📍 School of Life Sciences, Xiamen University Xiang'an Campus</strong><br>
+                        Xiang'an District, Xiamen, Fujian Province 361102, China
                     </p>
                     <p style="margin-top: 10px;">
-                        <a href="https://maps.google.com/?q=Xiamen+University+School+of+Life+Sciences" target="_blank" style="color: var(--secondary-color);">
-                            📍 Open in Google Maps
+                        <a href="https://maps.google.com/?q=School+of+Life+Sciences+Xiamen+University+Xiang'an+Campus+361102" target="_blank" style="color: var(--secondary-color);">
+                            📍 Open in Google Maps for Directions
                         </a>
                     </p>
                 </div>
@@ -163,7 +170,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Chen Ling Lab</h4>
-                    <p>School of Life Sciences<br>Xiamen University<br>Xiamen, Fujian, China</p>
+                    <p>School of Life Sciences<br>Xiamen University Xiang'an Campus<br>Xiang'an District, Xiamen<br>Fujian Province 361102, China</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
