@@ -1,0 +1,13 @@
+# robots.txt for Chen Ling Lab website
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://clingxmu.github.io/cling-lab/sitemap.xml
+
+# Crawl-delay if needed (optional)
+# Crawl-delay: 10
+
+# Disallow specific paths (if any)
+# Disallow: /private/
+# Disallow: /admin/
