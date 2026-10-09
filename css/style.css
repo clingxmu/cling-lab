@@ -104,10 +104,15 @@ a:hover {
    Hero Section
    ===================== */
 .hero {
-    background: var(--bg-light);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
     color: white;
-    padding: 40px 0;
+    padding: 80px 0;
     text-align: center;
+}
+
+.hero-home {
+    background: var(--bg-light);
+    padding: 40px 0;
 }
 
 .hero-banner {
