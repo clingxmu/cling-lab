@@ -104,10 +104,16 @@ a:hover {
    Hero Section
    ===================== */
 .hero {
-    background: linear-gradient(rgba(15, 30, 48, 0.75), rgba(15, 30, 48, 0.75)), url('../images/banner-mountain-sea.jpg') center/cover no-repeat;
+    background: var(--bg-light);
     color: white;
-    padding: 120px 0;
+    padding: 40px 0;
     text-align: center;
+}
+
+.hero-banner {
+    background: linear-gradient(rgba(15, 30, 48, 0.75), rgba(15, 30, 48, 0.75)), url('../images/banner-mountain-sea.jpg') center/cover no-repeat;
+    border-radius: 12px;
+    padding: 80px 20px;
 }
 
 .hero h1 {
