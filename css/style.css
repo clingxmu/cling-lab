@@ -104,7 +104,7 @@ a:hover {
    Hero Section
    ===================== */
 .hero {
-    background: linear-gradient(rgba(15, 30, 48, 0.65), rgba(15, 30, 48, 0.65)), url('../images/banner-mountain-sea.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(15, 30, 48, 0.75), rgba(15, 30, 48, 0.75)), url('../images/banner-mountain-sea.jpg') center/cover no-repeat;
     color: white;
     padding: 120px 0;
     text-align: center;
