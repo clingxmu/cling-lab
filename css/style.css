@@ -115,6 +115,18 @@ a:hover {
     padding: 40px 0;
 }
 
+.hero-bg-night {
+    background: linear-gradient(rgba(15, 30, 48, 0.82), rgba(15, 30, 48, 0.82)), url('../images/bg-night-sky.jpg') center/cover no-repeat;
+}
+
+.hero-bg-window {
+    background: linear-gradient(rgba(15, 30, 48, 0.82), rgba(15, 30, 48, 0.82)), url('../images/bg-lab-window.jpg') center/cover no-repeat;
+}
+
+.hero-bg-coast {
+    background: linear-gradient(rgba(15, 30, 48, 0.82), rgba(15, 30, 48, 0.82)), url('../images/bg-coast-sunset.jpg') center/cover no-repeat;
+}
+
 .hero-banner {
     background: linear-gradient(rgba(15, 30, 48, 0.75), rgba(15, 30, 48, 0.75)), url('../images/banner-mountain-sea.jpg') center/cover no-repeat;
     border-radius: 12px;
